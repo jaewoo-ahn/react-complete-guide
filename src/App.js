@@ -1,4 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpenses from "./components/NewExpenses/NewExpenses";
+import "./App.css";
 
 const App = () => {
   const expenses = [
@@ -28,8 +30,8 @@ const App = () => {
     },
   ];
   return (
-    <div>
-      <h2>Let's go get started!</h2>
+    <div className="WholeWrapper">
+      <NewExpenses />
       <Expenses items={expenses} />
     </div>
   );
