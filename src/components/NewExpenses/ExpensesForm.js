@@ -51,7 +51,9 @@ function ExpensesForm(props) {
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
+    console.log(expenseData);
   };
+
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
